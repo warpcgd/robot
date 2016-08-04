@@ -1,0 +1,146 @@
+/*skin 皮肤*/
+
+.all-title {
+	font-size: 36px;
+	color: #fff;
+	text-shadow: 0px 3px 1px #870805;
+}
+
+.answered-color {
+	background: #da9e6a!important;
+}
+
+.answering-color {
+	background: #ea4800!important;
+}
+
+.none-answer-color {
+	background: #bcbdb5!important;
+}
+
+.answer-wrong {
+	background: #FF0000!important;
+}
+
+.answer-right {
+	background: #15d007!important;
+}
+
+.main .response {
+	background: #dea063;
+}
+
+.main .response .response-header {
+	background: #dea063;
+}
+
+.response .response-area {
+	background: #fff;
+}
+
+.response .response-area .sliderTop {
+	background: #dad4b2;
+	padding: 15px;
+	line-height: 2;
+}
+
+.response .response-progress {
+	background: #d2681e;
+}
+
+.main .card {
+	background: #dad4b2;
+}
+
+.card .title {
+	background: #db9f69;
+}
+
+.card .card-option ul {
+	border: 1px solid #db9f69;
+}
+
+.card .card-option {
+	margin-top: 20px;
+}
+
+.content-loop .test .loop-questions>p {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.loop-questions .loop-num {
+	color: #0c59c1;
+	font-size: 18px;
+	margin-right: 15px;
+}
+
+.loop-questions .qustion-type {
+	color: #333;
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+.response-button button {
+	border: none;
+	width: 104px;
+	height: 40px;
+	background: url(../img/spirit.png) no-repeat -75px -18px;
+	background-image: url(../img/spirit.png);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+
+.response-button .iconimg {
+	background: url(../img/spirit.png) no-repeat 0 0;
+	background-image: url(../img/spirit.png);
+}
+
+.response-button i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
+.response-button .arrow-left-icon {
+	background-position: -38px -29px;
+	width: 22px;
+	height: 16px;
+}
+
+.response-button .arrow-right-icon {
+	background-position: -193px -29px;
+	width: 22px;
+	height: 16px;
+}
+
+.response-button .calculator-icon {
+	width: 18px;
+	height: 18px;
+	background-position: -231px -29px;
+}
+
+.response-button .help-icon {
+	width: 16px;
+	height: 16px;
+	background-position: -263px -29px;
+}
+
+.response-button .submit-icon {
+	width: 16px;
+	height: 16px;
+	background-position: -296px -29px;
+}
+
+.endpage .right button {
+	border: none;
+	width: 104px;
+	height: 40px;
+	background: url(../img/spirit.png) no-repeat -75px -18px;
+	background-image: url(../img/spirit.png);
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
