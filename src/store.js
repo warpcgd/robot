@@ -84,4 +84,4 @@ const testData = [{
     testUserAnswerId: '',
 }];
 
-export default testData;
+export {type,testData};
