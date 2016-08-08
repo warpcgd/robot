@@ -5,7 +5,7 @@
 			<!-- 答题组件 -->
 			<response-area :testdata='testData' :userdata='userdata'></response-area>
 			<!-- 快捷操作组件 -->
-			<response-button :userdata.sync='userdata' :testData='testData'></response-button>
+			<response-button :userdata.sync='userdata' :testData='testData' :usertestdata.sync='usertestdata'></response-button>
 			<!-- 进度条组件 -->
 			<response-progress></response-progress>
 	</div>
@@ -24,6 +24,9 @@
 			cardNum:'123124124',
 			currenttest:0,
 	}
+	let usertestdata = {
+
+	};
 	 export default {
         el: '#app',
         data:function(){

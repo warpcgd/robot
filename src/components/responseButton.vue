@@ -10,6 +10,7 @@
 <script>
     export default {
     		 props: ['testdata','userdata'],
+
     		 methods: {
     		 		nexttest:function(){
     		 			if(this.userdata.currenttest+1<this.testdata.length) {

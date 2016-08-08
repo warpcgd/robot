@@ -392,23 +392,23 @@ body {
 	font-size: 16px;
 }
 
-.content-loop label {
+.content-loop li {
 	display: block;
 	padding: 5px;
 	cursor: pointer;
 	color: #111;
 }
 
-.content-loop label:hover {
+.content-loop li:hover {
 	background: #F6F6F6;
 }
 
-.content-loop label.on i {
+.content-loop li.on i {
 	/*color: #FFF;*/
 	/*background: #09f;*/
 }
 
-.content-loop .anserlab i {
+.content-loop li i {
 	color: #0c59c1;
 	font-size: 18px;
 	font-weight: bold;
@@ -421,7 +421,7 @@ body {
 	padding: 15px;
 }
 
-.content-loop .anserlab .dot {
+.content-loop li .dot {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -434,7 +434,7 @@ body {
 	margin-right: 11px;
 }
 
-.content-loop .anserlab.on .dot {
+.content-loop li.on .dot {
 	background: #15d007!important;
 	border: 1px solid #fff;
 }
@@ -443,13 +443,13 @@ body {
 	border-radius: 2px;
 }
 
-.multiple .anserlab i {
+.multiple li i {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
 
-.judgment .anserlab i {
+.judgment li i {
 	height: 30px;
 	width: 30px;
 	line-height: 30px;
@@ -523,7 +523,7 @@ body {
 	display: inline-block;
 }
 
-.content-loop .judgment label:hover {
+.content-loop .judgment li:hover {
 	background: none;
 }
 

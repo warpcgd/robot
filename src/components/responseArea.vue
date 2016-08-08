@@ -10,10 +10,10 @@
 										<template v-if='testdata[userdata.currenttest].testType != 4'>
 											<ul class="answer">
 												<template v-if="testdata[userdata.currenttest].testoptions[0].optionContent.length>0">
-													<li v-for="option in testdata[userdata.currenttest].testoptions"><label class="anserlab"><i>{{option.optionName}}</i> <span class="dot"></span>{{option.optionContent}}</label></li>
+													<li v-for="option in testdata[userdata.currenttest].testoptions" @click.self="radioclick(userdata.currenttest,option.optionName,$index,$event)" :class="$index == radioclicknum?'on':''"><i>{{option.optionName}}</i> <span class="dot"></span>{{option.optionContent}}</li>
 												</template>
 												<template v-else>
-													<li style="display:inline-block" v-for="option in testdata[userdata.currenttest].testoptions"><label class="anserlab"><i>{{option.optionName}}</i> <span class="dot"></span>{{option.optionContent}}</label></li>
+													<li style="display:inline-block" v-for="option in testdata[userdata.currenttest].testoptions"><i>{{option.optionName}}</i> <span class="dot"></span>{{option.optionContent}}</li>
 												</template>
 											</ul>
 										</template>
@@ -47,7 +47,23 @@
 </template>
 <script>
     export default {
-    	 props: ['testdata', 'userdata'],
+    	 props: ['testdata', 'userdata','usertestdata'],
+    	 data:function(){
+    		 	return{
+    		 		radioclicknum:null,
+    		 	}
+    	},
+    	 methods: {
+    	 	radioclick:function(testnum,testoption,optionnum,event){
+    	 			console.log('testnum:'+testnum);
+    	 			console.log('testoption:'+testoption);
+    	 			if(this.radioclicknum == optionnum){
+    	 				this.radioclicknum=null;
+    	 			}else{
+    	 			this.radioclicknum = optionnum;
+    	 			}
+    	 	},
+    	 },
     	 computed: {
    		 // 一个计算属性的 getter
     	 type: function () {
